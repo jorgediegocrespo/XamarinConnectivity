@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinConnectivity"
+             x:Class="XamarinConnectivity.MainPage">
+
+    <StackLayout Margin="0,20">
+        <!-- Place new controls here -->
+        <Button Text="TEST CONNECTIVITY" 
+                HorizontalOptions="Center"
+                Command="{Binding TestConnectivityCommand}"/>
+        <Button Text="NOTIFY CONNECTIVITY CHANGES" 
+                HorizontalOptions="Center"
+                Command="{Binding NotifyConnectivityChangesCommand}"/>
+        <Label Text="{Binding NetworkAccess}"
+               HorizontalOptions="Center"
+               TextColor="Red"/>
+        <Label Text="{Binding Profile}"
+               HorizontalOptions="Center"
+               TextColor="Green"/>
+    </StackLayout>
+
+</ContentPage>
