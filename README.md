@@ -1,2 +1,2 @@
 # XamarinConnectivity
-Xamarin project to find out wheter an internet connection is available
+Example to find out which network connection and profiles are actives.
